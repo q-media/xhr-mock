@@ -3,6 +3,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "2.2.0",
-  "npmClient": "yarn"
+  "version": "2.2.1",
+  "npmClient": "yarn",
+  "useGitVersion": true
 }
