@@ -617,13 +617,15 @@ export default class MockXMLHttpRequest extends MockXMLHttpRequestEventTarget
 
     // if body is null, go to the next step otherwise, let encoding and mimeType be null, and then follow these rules, switching on body
     if (body !== null && body !== undefined) {
+      /*
       if (typeof body !== 'string') {
         throw new Error(
           "xhr-mock: A non-string body is not supported yet. You're welcome to submit a PR 😁."
         );
       }
+      */
       // TODO: set mime-type and encoding
-      this.req.body(body);
+      this.req.body(typeof body !== 'string' ? '' : body);
     }
 
     // if one or more event listeners are registered on the associated XMLHttpRequestUpload object, then set upload listener flag
