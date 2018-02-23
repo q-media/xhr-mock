@@ -1,6 +1,7 @@
 {
   "name": "xhr-mock-monorepo",
   "private": true,
+  "version": "2.2.1",
   "dependencies": {
     "husky": "^0.14.3",
     "lerna": "^2.6.0",
